@@ -74,15 +74,17 @@ class ContactPage extends React.Component{
 
     render() {
         return(
-            <div>
+            <div >
 
                 <Hero title={this.props.title} />
 
-{/*                <form name={"contact"} action={"/contact"} method={"post"}>
+               {/* <form name={"contact"} action={"/contact"} method={"post"} >
+                    <input type="hidden" name="form-name" value="contact" />
                     <input
                         type={"hidden"}
                         name={"form-name"}
                         value={"contact"}
+
                     />
                     <input
                         required type={"text"}
@@ -111,8 +113,8 @@ class ContactPage extends React.Component{
                     >
                         Send
                     </Button>
-                </form>*/}
-
+                </form>
+*/}
 
 
 
@@ -126,7 +128,7 @@ class ContactPage extends React.Component{
                         <Form.Group  action={"/contact"} method={"post"}>
                             <input type="hidden" name="form-name" value="contact" />
                             <Form.Label htmlFor={"full-name"}>Full Name</Form.Label>
-                            <input
+                            <Form.Control
                                 id={"full-name"}
                                 name={"name"}
                                 type={"text"}
@@ -136,7 +138,7 @@ class ContactPage extends React.Component{
                             />
 
                             <Form.Label htmlFor={"email"}>Email</Form.Label>
-                            <input
+                            <Form.Control
                                 id={"email"}
                                 name={"email"}
                                 type={"email"}
@@ -145,7 +147,7 @@ class ContactPage extends React.Component{
                             />
 
                             <Form.Label htmlFor={"message"}>Message</Form.Label>
-                            <input
+                            <Form.Control
                                 id={"message"}
                                 name={"message"}
                                 as={"textarea"}
@@ -155,23 +157,23 @@ class ContactPage extends React.Component{
                             />
                         </Form.Group>
 
-
-
-
                         <Button
                             className={"d-inline-block"}
                             variant={"primary"}
                             type={"submit"}
-                            disabled={this.state.disabled}
+
                         >
                             Send
                         </Button>
 
-{/*                        {this.state.emailSent === true && <p className={"d-inline success-msg"}>Email Sent</p>}
-                        {this.state.emailSent === false && <p className={"d-inline error-msg"}>Email Not Sent</p>}*/}
+
+                        {this.state.emailSent === true && <p className={"d-inline success-msg"}>Email Sent</p>}
+                        {this.state.emailSent === false && <p className={"d-inline error-msg"}>Email Not Sent</p>}
+
 
                     </Form>
                 </Content>
+
 
                 <SocialFollow />
 
