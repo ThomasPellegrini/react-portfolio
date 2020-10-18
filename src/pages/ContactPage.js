@@ -93,7 +93,7 @@ class ContactPage extends React.Component{
                                 name={"name"}
                                 type={"text"}
                                 value={this.state.name}
-                                /*onChange={this.handleChange}*/
+                                onChange={this.handleChange}
 
 
                             />
@@ -118,7 +118,7 @@ class ContactPage extends React.Component{
                                 name={"email"}
                                 type={"email"}
                                 value={this.state.email}
-                                /*onChange={this.handleChange}*/
+                                onChange={this.handleChange}
                             />
                         </Form.Group>
 
@@ -146,7 +146,7 @@ class ContactPage extends React.Component{
                                 as={"textarea"}
                                 row={"3"}
                                 value={this.state.message}
-                                /*onChange={this.handleChange}*/
+                                onChange={this.handleChange}
                             />
                         </Form.Group>
 
