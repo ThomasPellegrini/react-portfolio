@@ -11,6 +11,7 @@ import Background from "../assets/images/background.jpg"
 
 import Axios from "axios";
 import Container from "react-bootstrap/Container";
+import {width} from "@fortawesome/free-brands-svg-icons/faQq";
 
 class ContactPage extends React.Component{
     constructor() {
@@ -121,20 +122,27 @@ class ContactPage extends React.Component{
                 <form name="contact" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
                     <p>
-                        <label >Your Name:
-                            <input type="text" name="name"  /></label>
+                        <label >Name:
+                            <input type="text" name="name" style={{width:'300%', position:'center'}}/></label>
                     </p>
                     <p>
-                        <label>Your Email:
-                            <input type="email" name="email" /></label>
+                        <label>Email:
+                            <input type="email" name="email" style={{width:'300%', position:'center'}}/></label>
                     </p>
 
                     <p>
                         <label>Message:
-                            <textarea name="message"></textarea></label>
+                            <textarea name="message" style={{width:'300%', position:'center'}}></textarea></label>
                     </p>
                     <p>
-                        <button type="submit">Send</button>
+                        <Button
+                            className={"d-inline-block"}
+                            variant={"primary"}
+                            type={"submit"}
+
+                        >
+                            Send
+                        </Button>
                     </p>
                 </form>
             </Content>
