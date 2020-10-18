@@ -16,18 +16,18 @@ class ContactPage extends React.Component{
     constructor() {
         super();
         this.state = {
-            name: '',
+/*            name: '',
             email: '',
-            message: '',
+            message: '',*/
             disabled: false,
-            emailSent: null
+            /*emailSent: null*/
         }
     }
 
     handleChange = (event) => {
-        const target = event.target;
+/*        const target = event.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
-        const name = target.name;
+        const name = target.name;*/
 
         this.setState({
             [name]: value
@@ -44,7 +44,7 @@ class ContactPage extends React.Component{
             disabled: true,
         });
 
-        Axios.post('http://localhost:3030/api/email', this.state)
+/*        Axios.post('http://localhost:3030/api/email', this.state)
             .then(res => {
                 if(res.data.success) {
                     this.setState({
@@ -63,7 +63,7 @@ class ContactPage extends React.Component{
                     disabled: false,
                     emailSent: false
                 })
-            })
+            })*/
 
     }
 
@@ -162,8 +162,8 @@ class ContactPage extends React.Component{
                             Send
                         </Button>
 
-                        {this.state.emailSent === true && <p className={"d-inline success-msg"}>Email Sent</p>}
-                        {this.state.emailSent === false && <p className={"d-inline error-msg"}>Email Not Sent</p>}
+                        {/*{this.state.emailSent === true && <p className={"d-inline success-msg"}>Email Sent</p>}
+                        {this.state.emailSent === false && <p className={"d-inline error-msg"}>Email Not Sent</p>}*/}
 
                     </Form>
                 </Content>
