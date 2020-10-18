@@ -100,7 +100,7 @@ class App extends Component {
               }}
               style={{
                 width: '100%',
-                  /*backgroundImage: `url(${Background})`,*/
+
                   position: "absolute",
 
 
