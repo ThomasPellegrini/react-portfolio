@@ -43,7 +43,7 @@ class App extends Component {
     return(
 
         <Router>
-{/*          <Particles
+          <Particles
               params={{
                 particles: {number: { value: 20, density: { enable: true, value_area: 800 } },
                   color: { value: "#000000" },
@@ -100,12 +100,11 @@ class App extends Component {
               }}
               style={{
                 width: '100%',
-
                   position: "absolute",
 
 
               }}
-          />*/}
+          />
           <Container className="" fluid={true}>
 
             <Navbar className="border-bottom" bg="transparent" expand="lg">
