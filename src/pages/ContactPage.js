@@ -22,7 +22,10 @@ class ContactPage extends React.Component{
             disabled: false,
             /*emailSent: null*/
         }
+
     }
+
+
 
     handleChange = (event) => {
 /*        const target = event.target;
@@ -66,6 +69,8 @@ class ContactPage extends React.Component{
             })*/
 
     }
+
+
 
     render() {
         return(
@@ -116,21 +121,22 @@ class ContactPage extends React.Component{
 
 
                 <Content >
-                    <Form onSubmit={this.handleSubmit} >
+                    <Form onSubmit={this.handleSubmit} display={"flex"} flexDirection={"column"}>
 
-                        <Form.Group action={"/contact"} method={"post"}>
+                        <Form.Group  action={"/contact"} method={"post"}>
                             <input type="hidden" name="form-name" value="contact" />
                             <Form.Label htmlFor={"full-name"}>Full Name</Form.Label>
-                            <Form.Control
+                            <input
                                 id={"full-name"}
                                 name={"name"}
                                 type={"text"}
                                 value={this.state.name}
-                                onChange={this.handleChange}
+                                onChange={this.handleChange}flexDirection={"column"}
+
                             />
 
                             <Form.Label htmlFor={"email"}>Email</Form.Label>
-                            <Form.Control
+                            <input
                                 id={"email"}
                                 name={"email"}
                                 type={"email"}
@@ -139,7 +145,7 @@ class ContactPage extends React.Component{
                             />
 
                             <Form.Label htmlFor={"message"}>Message</Form.Label>
-                            <Form.Control
+                            <input
                                 id={"message"}
                                 name={"message"}
                                 as={"textarea"}
