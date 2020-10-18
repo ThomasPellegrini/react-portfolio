@@ -116,13 +116,28 @@ class ContactPage extends React.Component{
                 </form>
 */}
 
+            <Content>
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                        <label>Your Name: <input type="text" name="name" /></label>
+                    </p>
+                    <p>
+                        <label>Your Email: <input type="email" name="email" /></label>
+                    </p>
+
+                    <p>
+                        <label>Message: <textarea name="message"></textarea></label>
+                    </p>
+                    <p>
+                        <button type="submit">Send</button>
+                    </p>
+                </form>
+            </Content>
 
 
 
 
-
-
-                <Content >
+{/*                <Content >
                     <Form onSubmit={this.handleSubmit} display={"flex"} flexDirection={"column"}>
 
                         <Form.Group  action={"/contact"} method={"post"}>
@@ -172,7 +187,7 @@ class ContactPage extends React.Component{
 
 
                     </Form>
-                </Content>
+                </Content>*/}
 
 
                 <SocialFollow />
