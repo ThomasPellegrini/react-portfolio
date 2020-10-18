@@ -78,7 +78,7 @@ class ContactPage extends React.Component{
 
                 <Hero title={this.props.title} />
 
-                <form name={"contact"} action={"/contact"} method={"post"} >
+{/*                <form name={"contact"} action={"/contact"} method={"post"} >
                     <input type="hidden" name="form-name" value="contact" />
                     <input
                         type={"hidden"}
@@ -113,12 +113,13 @@ class ContactPage extends React.Component{
                     >
                         Send
                     </Button>
-                </form>
+                </form>*/}
 
 
-{/*
+
             <Content>
                 <form name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact" />
                     <p>
                         <label>Your Name: <input type="text" name="name" /></label>
                     </p>
@@ -134,7 +135,7 @@ class ContactPage extends React.Component{
                     </p>
                 </form>
             </Content>
-*/}
+
 
 
 
