@@ -122,17 +122,18 @@ class ContactPage extends React.Component{
                 <form name="contact" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
                     <p>
-                        <label >Name:
-                            <input type="text" name="name" style={{width:'300%', position:'center'}}/></label>
+                        <label style={{fontSize:"15px"}}>Name:
+                            {/*<input type="text" name="name" style={{width:'300%', position:'center'}}/></label>*/}
+                            <input type="text" name="name" className="type-1"/></label>
                     </p>
                     <p>
-                        <label>Email:
-                            <input type="email" name="email" style={{width:'300%', position:'center'}}/></label>
+                        <label style={{fontSize:"15px"}}>Email:
+                            <input type="email" name="email" className="type-1" /></label>
                     </p>
 
                     <p>
-                        <label>Message:
-                            <textarea name="message" style={{width:'300%', position:'center'}}></textarea></label>
+                        <label style={{fontSize:"15px"}}>Message:
+                            <textarea name="message" className="type-1" ></textarea></label>
                     </p>
                     <p>
                         <Button
