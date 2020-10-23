@@ -21,8 +21,8 @@ class App extends Component {
       title: "Thomas Pellegrini",
       headerLinks: [
         {title: "Home", path: '/#'},
-        {title: "About", path: '/#/about'},
-        {title: "Contact", path: '/#/contact'}
+        {title: "About", path: '/#about'},
+        {title: "Contact", path: '/#contact'}
       ],
       home: {
         title: "Hi! I'm Thomas Pellegrini",
