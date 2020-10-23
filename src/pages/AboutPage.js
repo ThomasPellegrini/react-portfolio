@@ -20,6 +20,7 @@ function AboutPage(props){
 
             </Content>
 
+{/*
             <div >
                 <img
                     style={{
@@ -31,6 +32,7 @@ function AboutPage(props){
                     }}
                     src={youtube} ></img>
             </div>
+*/}
 
 
         </div>
