@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import NavbarBrand from "react-bootstrap/NavbarBrand"
 import Nav from "react-bootstrap/Nav"
+import { HashRouter } from 'react-router-dom';
+
 import './App.css';
 
 import Footer from "./components/Footer";
@@ -20,9 +22,9 @@ class App extends Component {
     this.state={
       title: "Thomas Pellegrini",
       headerLinks: [
-        {title: "Home", path: '/#'},
-        {title: "About", path: '/#about'},
-        {title: "Contact", path: '/#contact'}
+        {title: "Home", path: '/'},
+        {title: "About", path: '/about'},
+        {title: "Contact", path: '/contact'}
       ],
       home: {
         title: "Hi! I'm Thomas Pellegrini",
@@ -42,7 +44,7 @@ class App extends Component {
     console.log(new Date(2020, 8, 28))
     return(
 
-        <Router>
+        <HashRouter>
           <Particles
               params={{
                 particles: {number: { value: 20, density: { enable: true, value_area: 800 } },
@@ -146,7 +148,7 @@ class App extends Component {
 
           </Container>
 
-        </Router>
+        </HashRouter>
     );
   }
 
