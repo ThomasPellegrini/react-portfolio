@@ -44,6 +44,10 @@ function AboutPage(props){
         <div >
             <Hero title={props.title} />
 
+            <a href="../assets/images/youtube.png" download>
+                <button className={"buttonDownload"} type="button" >Download CV</button>
+            </a>
+
             <Content>
 
                 <p>This is the part where i talk about me blablabla. This is the part where i talk about me blablabla</p>
@@ -55,6 +59,8 @@ function AboutPage(props){
                     <SkillBar   skills={skills} height={40} colors={colors}/>
                 </div>
             </Content>
+
+
 
 {/*
             <div >
