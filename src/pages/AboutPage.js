@@ -44,7 +44,7 @@ function AboutPage(props){
         <div >
             <Hero title={props.title} />
 
-            <a href="../assets/images/youtube.png" download>
+            <a href="../assets/images/youtube.png" download={"cv.png"}>
                 <button className={"buttonDownload"} type="button" >Download CV</button>
             </a>
 
