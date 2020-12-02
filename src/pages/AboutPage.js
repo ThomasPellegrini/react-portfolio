@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import Content from "../components/Content";
 import SkillBar from 'react-skillbars';
 
-import youtube from "../assets/images/youtube.png"
+import cloud from "../assets/cloud.pdf"
 
 function AboutPage(props){
 
@@ -44,10 +44,6 @@ function AboutPage(props){
         <div >
             <Hero title={props.title} />
 
-            <a href="../assets/images/youtube.png" download={"cv"}>
-                <button className={"buttonDownload"} type="button" >Download CV</button>
-            </a>
-
             <Content>
 
                 <p>This is the part where i talk about me blablabla. This is the part where i talk about me blablabla</p>
@@ -58,6 +54,9 @@ function AboutPage(props){
                 <div className={'skill'}>
                     <SkillBar   skills={skills} height={40} colors={colors}/>
                 </div>
+                <a href={cloud} target={"_blank"}>
+                    <button className={"buttonDownload"} type="button" >Download CV</button>
+                </a>
             </Content>
 
 

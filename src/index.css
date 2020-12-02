@@ -66,10 +66,10 @@ code {
 .buttonDownload {
     display: inline-block;
     position: relative;
-    padding: 20px 35px;
+    padding: 2px 10px;
 
 
-    background-color: #c71913;
+    background-color: #0142e5;
     color: white;
 
     font-family: sans-serif;
