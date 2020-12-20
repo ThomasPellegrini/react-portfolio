@@ -2,8 +2,8 @@ import React from "react";
 
 import iot from "../assets/images/iot.jpg";
 import react_native from "../assets/images/react_native.jpg";
-import youtube from "../assets/images/youtube.png";
-import ml from "../assets/images/ml.jpg"
+import js from "../assets/images/js.png";
+import pa from "../assets/images/python_android.jpg"
 import Card from "../components/Card";
 import ContactPage from "../pages/ContactPage";
 import Container from "react-bootstrap/Container";
@@ -17,7 +17,7 @@ class Carousel extends React.Component{
                 {
                     id:0,
                     title: "Smart Home IoT",
-                    subTitle:"IoT project based on a NodeMCU dev board, Python server, MySQL db and telegram bot",
+                    subTitle:"Based on a NodeMCU, Python server and MySQL db",
                     imgSrc: iot,
                     link: "https://github.com/ThomasPellegrini/Smart-Home-IoT",
                     selected: false
@@ -27,23 +27,23 @@ class Carousel extends React.Component{
                     title: "University News App",
                     subTitle:"University News App made with React Native",
                     imgSrc: react_native,
-                    link: "https://www.youtube.com/",
+                    link: "https://github.com/ThomasPellegrini/University-News-App",
                     selected: false
                 },
                 {
                     id:2,
-                    title: "Machine Learning",
-                    subTitle:"Test carousel subtitle",
-                    imgSrc: ml,
-                    link: "https://www.youtube.com/",
+                    title: "Test4Enforcers",
+                    subTitle:"Python tool to validate enforcers for Android apps.",
+                    imgSrc: pa,
+                    link: "Closed source for now :D",
                     selected: false
                 },
                 {
                     id:3,
-                    title: "YouTube2",
-                    subTitle:"Test carousel subtitle",
-                    imgSrc: youtube,
-                    link: "https://www.youtube.com/",
+                    title: "Sorting Visualizer",
+                    subTitle:"React project that visualizes the Merge Sort algorithm",
+                    imgSrc: js,
+                    link: "https://github.com/ThomasPellegrini/SortingVisualizer",
                     selected: false
                 }
             ]

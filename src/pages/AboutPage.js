@@ -7,7 +7,7 @@ import cloud from "../assets/cloud.pdf"
 
 function AboutPage(props){
 
-    const skills = [
+/*    const skills = [
         {
             "type": "Python",
             "level": 80
@@ -29,7 +29,7 @@ function AboutPage(props){
             "type": "Javascript",
             "level": 25
         }
-    ]
+    ]*/
     const colors = {
         "bar": "#09d6e8",
         "title": {
@@ -46,16 +46,22 @@ function AboutPage(props){
 
             <Content>
 
-                <p>This is the part where i talk about me blablabla. This is the part where i talk about me blablabla</p>
-                <p>This is the part where i talk about me blablabla. This is the part where i talk about me blablabla.</p>
-                <p>This is the part where i talk about me blablabla. This is the part where i talk about me blablabla.</p>
-                <p>This is the part where i talk about me blablabla. This is the part where i talk about me blablabla.</p>
-                <p>This is the part where i talk about me blablabla. This is the part where i talk about me blablabla.f</p>
+                <p>From the moment I produced "Hello World" in the console of my application, I knew I was hooked into</p>
+                <p>the world of software development. But software development has never been "just a job" for me, </p>
+                <p>it's offered an engaging challenge to continually learn and improve my skills in creating high-quality software.</p>
+                <p>What started with a simple "Hello World" has become a full-fledged passion that only gets more exciting</p>
+                <p>as the years go by.</p>
+                <p>           </p>
+
+
+                {/*
                 <div className={'skill'}>
                     <SkillBar   skills={skills} height={40} colors={colors}/>
-                </div>
+                </div>*/}
+
+
                 <a href={cloud} target={"_blank"}>
-                    <button className={"buttonDownload"} type="button" >Download CV</button>
+                    <button className={"buttonDownload"} type="button" >Check my CV</button>
                 </a>
             </Content>
 
