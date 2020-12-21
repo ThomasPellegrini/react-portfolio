@@ -32,10 +32,10 @@ class Carousel extends React.Component{
                 },
                 {
                     id:2,
-                    title: "Test4Enforcers",
+                    title: "Test4Enforcers (Closed source for now :D)",
                     subTitle:"Python tool to validate enforcers for Android apps.",
                     imgSrc: pa,
-                    link: "Closed source for now :D",
+                    /*link: "Closed source for now :D",*/
                     selected: false
                 },
                 {

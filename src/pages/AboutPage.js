@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import Content from "../components/Content";
 import SkillBar from 'react-skillbars';
 
-import cloud from "../assets/cloud.pdf"
+import cv from "../assets/cv.pdf"
 
 function AboutPage(props){
 
@@ -60,7 +60,7 @@ function AboutPage(props){
                 </div>*/}
 
 
-                <a href={cloud} target={"_blank"}>
+                <a href={cv} target={"_blank"}>
                     <button className={"buttonDownload"} type="button" >Check my CV</button>
                 </a>
             </Content>
