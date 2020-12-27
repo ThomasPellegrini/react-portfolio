@@ -118,12 +118,11 @@ class ContactPage extends React.Component{
 
 
 
-            <Content>
+{/*            <Content>
                 <form name="contact" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
                     <p>
                         <label style={{fontSize:"15px"}}>Name:
-                            {/*<input type="text" name="name" style={{width:'300%', position:'center'}}/></label>*/}
                             <input type="text" name="name" className="type-1"/></label>
                     </p>
                     <p>
@@ -146,7 +145,7 @@ class ContactPage extends React.Component{
                         </Button>
                     </p>
                 </form>
-            </Content>
+            </Content>*/}
 
 
 

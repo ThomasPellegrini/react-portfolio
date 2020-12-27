@@ -4,7 +4,8 @@ import Background from "../assets/images/background.jpg";
 import Particles from "react-particles-js";
 import {
     faLinkedin,
-    faGithub
+    faGithub,
+    faGoogle
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function SocialFollow() {
@@ -16,6 +17,9 @@ export default function SocialFollow() {
             </a>
             <a href="https://www.github.com/ThomasPellegrini" className="github social">
                 <FontAwesomeIcon icon={faGithub} size="5x" />
+            </a>
+            <a href="mailto:pellegrinithomas1@gmail.com" className="github social">
+                <FontAwesomeIcon icon={faGoogle} size="5x" color={"#dd4b39"}/>
             </a>
 
 {/*
