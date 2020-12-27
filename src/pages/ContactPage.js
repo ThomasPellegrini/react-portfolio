@@ -119,7 +119,7 @@ class ContactPage extends React.Component{
 
 
             <Content>
-                <form name="contact" method="POST" data-netlify="true">
+                <form name="contact" method="POST">
                     <input type="hidden" name="form-name" value="contact" />
                     <p>
                         <label style={{fontSize:"15px"}}>Name:
