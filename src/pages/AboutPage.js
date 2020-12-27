@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import Content from "../components/Content";
 import SkillBar from 'react-skillbars';
-
+import Button from 'react-bootstrap/Button'
 import cv from "../assets/cv.pdf"
 
 function AboutPage(props){
@@ -61,7 +61,8 @@ function AboutPage(props){
 
 
                 <a href={cv} target={"_blank"}>
-                    <button className={"buttonDownload"} type="button" >Check my CV</button>
+                    <Button  type="button" className={"d-inline-block"}
+                            variant={"primary"} >Check my CV</Button>
                 </a>
             </Content>
 
