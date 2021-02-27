@@ -46,11 +46,9 @@ function AboutPage(props){
 
             <Content>
 
-                <p>From the moment I produced "Hello World" in the console of my application, I knew I was hooked into</p>
-                <p>the world of software development. But software development has never been "just a job" for me, </p>
-                <p>it's offered an engaging challenge to continually learn and improve my skills in creating high-quality software.</p>
-                <p>What started with a simple "Hello World" has become a full-fledged passion that only gets more exciting</p>
-                <p>as the years go by.</p>
+                <p>From the moment I produced "Hello World" in the console of my application, I knew I was hooked into the world of software development. </p>
+                <p>But software development has never been "just a job" for me, it's offered an engaging challenge to continually learn and improve my skills in creating high-quality software.</p>
+                <p>What started with a simple "Hello World" has become a full-fledged passion that only gets more exciting  as the years go by.</p>
                 <p>           </p>
 
 
