@@ -12,6 +12,7 @@ import Background from "../assets/images/background.jpg"
 import Axios from "axios";
 import Container from "react-bootstrap/Container";
 import {width} from "@fortawesome/free-brands-svg-icons/faQq";
+import AnimatedBB8 from "../components/AnimatedBB8";
 
 class ContactPage extends React.Component{
     constructor() {
@@ -205,6 +206,8 @@ class ContactPage extends React.Component{
 
 
                 <SocialFollow />
+
+                <AnimatedBB8 />
 
             </div>
         )

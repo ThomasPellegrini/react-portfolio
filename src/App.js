@@ -6,7 +6,7 @@ import NavbarBrand from "react-bootstrap/NavbarBrand"
 import Nav from "react-bootstrap/Nav"
 import { HashRouter } from 'react-router-dom';
 
-import './App.css';
+import './App.scss';
 
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
