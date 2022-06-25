@@ -9,7 +9,7 @@ class AnimatedBB8 extends React.Component {
             droidX: 0,
             mouseX: 0,
             toTheRight: true,
-            speed: 2,
+            speed: 0.5,
             accelMod: 1
         }
     }

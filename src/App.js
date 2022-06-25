@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
@@ -15,8 +15,10 @@ import AboutPage from "./pages/AboutPage";
 import Particles from "react-particles-js";
 import Background from "./assets/images/background.jpg";
 
-class App extends Component {
 
+
+class App extends Component {
+  // const [expanded, setExpanded] = React.useState(false);
   constructor() {
     super();
     this.state={
@@ -37,6 +39,7 @@ class App extends Component {
       contact: {
         title: 'Let\'s Talk'
       }
+      // expanded: false
     }
   }
 
@@ -107,18 +110,17 @@ class App extends Component {
 
               }}
           />
+
           <Container className="" fluid={true}>
 
-            <Navbar className="border-bottom" bg="transparent" expand="lg">
+            <Navbar className="border-bottom" bg="transparent" expand="lg" >
               <Navbar.Brand>Thomas Pellegrini</Navbar.Brand>
               <Navbar.Toggle className={"border-0"} aria-controls="navbar-toggle" />
               <Navbar.Collapse id="navbar-toggle">
                 <Nav className="ml-auto">
-                  <Link className="nav-link" to="/">Home</Link>
+                  <Link className="nav-link" to="/" >Home</Link>
                   <Link className="nav-link" to="/about">About</Link>
                   <Link className="nav-link" to="/contact">Contact</Link>
-
-
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
