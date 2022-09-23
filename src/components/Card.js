@@ -8,7 +8,7 @@ import pa from "../assets/images/python_android.jpg";
 import js from "../assets/images/js.png";
 import react_image from "../assets/images/react.svg"
 import iot_image from "../assets/images/iot.svg"
-import android_image from "../assets/images/android.svg"
+import discord from "../assets/images/discord.svg"
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -191,12 +191,12 @@ const cards = [
     },
     {
         id:2,
-        title: "Test4Enforcers 📱",
-        subTitle:"Python tool to validate enforcers for Android apps.",
+        title: "Discord Clone 🐍",
+        subTitle:"Fully working Discord clone with the essential features. Made with Django.",
         imgSrc: pa,
-        /*link: "Closed source for now :D",*/
+        link: "https://github.com/ThomasPellegrini/discord-clone",
         selected: false,
-            image: android_image,
+            image: discord,
             imageRatio: 784 / 1016
     },
     {
